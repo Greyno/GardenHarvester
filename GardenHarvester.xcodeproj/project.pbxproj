@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0A5306F1E5B7A4B000B0270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5306E1E5B7A4B000B0270 /* AppDelegate.swift */; };
+		A0A530711E5B7A4B000B0270 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A530701E5B7A4B000B0270 /* ViewController.swift */; };
+		A0A530741E5B7A4B000B0270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A530721E5B7A4B000B0270 /* Main.storyboard */; };
+		A0A530761E5B7A4B000B0270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A530751E5B7A4B000B0270 /* Assets.xcassets */; };
+		A0A530791E5B7A4B000B0270 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A530771E5B7A4B000B0270 /* LaunchScreen.storyboard */; };
+		A0A530841E5B7A4B000B0270 /* GardenHarvesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A530831E5B7A4B000B0270 /* GardenHarvesterTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0A530801E5B7A4B000B0270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0A530631E5B7A4B000B0270 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0A5306A1E5B7A4B000B0270;
+			remoteInfo = GardenHarvester;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0A5306B1E5B7A4B000B0270 /* GardenHarvester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GardenHarvester.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0A5306E1E5B7A4B000B0270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0A530701E5B7A4B000B0270 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0A530731E5B7A4B000B0270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0A530751E5B7A4B000B0270 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0A530781E5B7A4B000B0270 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0A5307A1E5B7A4B000B0270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0A5307F1E5B7A4B000B0270 /* GardenHarvesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GardenHarvesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0A530831E5B7A4B000B0270 /* GardenHarvesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenHarvesterTests.swift; sourceTree = "<group>"; };
+		A0A530851E5B7A4B000B0270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0A530681E5B7A4B000B0270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0A5307C1E5B7A4B000B0270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0A530621E5B7A4B000B0270 = {
+			isa = PBXGroup;
+			children = (
+				A0A5306D1E5B7A4B000B0270 /* GardenHarvester */,
+				A0A530821E5B7A4B000B0270 /* GardenHarvesterTests */,
+				A0A5306C1E5B7A4B000B0270 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0A5306C1E5B7A4B000B0270 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0A5306B1E5B7A4B000B0270 /* GardenHarvester.app */,
+				A0A5307F1E5B7A4B000B0270 /* GardenHarvesterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0A5306D1E5B7A4B000B0270 /* GardenHarvester */ = {
+			isa = PBXGroup;
+			children = (
+				A0A5306E1E5B7A4B000B0270 /* AppDelegate.swift */,
+				A0A530701E5B7A4B000B0270 /* ViewController.swift */,
+				A0A530721E5B7A4B000B0270 /* Main.storyboard */,
+				A0A530751E5B7A4B000B0270 /* Assets.xcassets */,
+				A0A530771E5B7A4B000B0270 /* LaunchScreen.storyboard */,
+				A0A5307A1E5B7A4B000B0270 /* Info.plist */,
+			);
+			path = GardenHarvester;
+			sourceTree = "<group>";
+		};
+		A0A530821E5B7A4B000B0270 /* GardenHarvesterTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0A530831E5B7A4B000B0270 /* GardenHarvesterTests.swift */,
+				A0A530851E5B7A4B000B0270 /* Info.plist */,
+			);
+			path = GardenHarvesterTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0A5306A1E5B7A4B000B0270 /* GardenHarvester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0A530881E5B7A4B000B0270 /* Build configuration list for PBXNativeTarget "GardenHarvester" */;
+			buildPhases = (
+				A0A530671E5B7A4B000B0270 /* Sources */,
+				A0A530681E5B7A4B000B0270 /* Frameworks */,
+				A0A530691E5B7A4B000B0270 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GardenHarvester;
+			productName = GardenHarvester;
+			productReference = A0A5306B1E5B7A4B000B0270 /* GardenHarvester.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0A5307E1E5B7A4B000B0270 /* GardenHarvesterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0A5308B1E5B7A4B000B0270 /* Build configuration list for PBXNativeTarget "GardenHarvesterTests" */;
+			buildPhases = (
+				A0A5307B1E5B7A4B000B0270 /* Sources */,
+				A0A5307C1E5B7A4B000B0270 /* Frameworks */,
+				A0A5307D1E5B7A4B000B0270 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0A530811E5B7A4B000B0270 /* PBXTargetDependency */,
+			);
+			name = GardenHarvesterTests;
+			productName = GardenHarvesterTests;
+			productReference = A0A5307F1E5B7A4B000B0270 /* GardenHarvesterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0A530631E5B7A4B000B0270 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Reynolds-Titko-Gillian";
+				TargetAttributes = {
+					A0A5306A1E5B7A4B000B0270 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = E8L4KCE2WJ;
+						ProvisioningStyle = Automatic;
+					};
+					A0A5307E1E5B7A4B000B0270 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = E8L4KCE2WJ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A0A5306A1E5B7A4B000B0270;
+					};
+				};
+			};
+			buildConfigurationList = A0A530661E5B7A4B000B0270 /* Build configuration list for PBXProject "GardenHarvester" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0A530621E5B7A4B000B0270;
+			productRefGroup = A0A5306C1E5B7A4B000B0270 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0A5306A1E5B7A4B000B0270 /* GardenHarvester */,
+				A0A5307E1E5B7A4B000B0270 /* GardenHarvesterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0A530691E5B7A4B000B0270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0A530791E5B7A4B000B0270 /* LaunchScreen.storyboard in Resources */,
+				A0A530761E5B7A4B000B0270 /* Assets.xcassets in Resources */,
+				A0A530741E5B7A4B000B0270 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0A5307D1E5B7A4B000B0270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0A530671E5B7A4B000B0270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0A530711E5B7A4B000B0270 /* ViewController.swift in Sources */,
+				A0A5306F1E5B7A4B000B0270 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0A5307B1E5B7A4B000B0270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0A530841E5B7A4B000B0270 /* GardenHarvesterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0A530811E5B7A4B000B0270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0A5306A1E5B7A4B000B0270 /* GardenHarvester */;
+			targetProxy = A0A530801E5B7A4B000B0270 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0A530721E5B7A4B000B0270 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0A530731E5B7A4B000B0270 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0A530771E5B7A4B000B0270 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0A530781E5B7A4B000B0270 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0A530861E5B7A4B000B0270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0A530871E5B7A4B000B0270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0A530891E5B7A4B000B0270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E8L4KCE2WJ;
+				INFOPLIST_FILE = GardenHarvester/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reynoldstitkogillian.GardenHarvester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A0A5308A1E5B7A4B000B0270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E8L4KCE2WJ;
+				INFOPLIST_FILE = GardenHarvester/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reynoldstitkogillian.GardenHarvester;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A0A5308C1E5B7A4B000B0270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = E8L4KCE2WJ;
+				INFOPLIST_FILE = GardenHarvesterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reynoldstitkogillian.GardenHarvesterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GardenHarvester.app/GardenHarvester";
+			};
+			name = Debug;
+		};
+		A0A5308D1E5B7A4B000B0270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = E8L4KCE2WJ;
+				INFOPLIST_FILE = GardenHarvesterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reynoldstitkogillian.GardenHarvesterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GardenHarvester.app/GardenHarvester";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0A530661E5B7A4B000B0270 /* Build configuration list for PBXProject "GardenHarvester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0A530861E5B7A4B000B0270 /* Debug */,
+				A0A530871E5B7A4B000B0270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0A530881E5B7A4B000B0270 /* Build configuration list for PBXNativeTarget "GardenHarvester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0A530891E5B7A4B000B0270 /* Debug */,
+				A0A5308A1E5B7A4B000B0270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A0A5308B1E5B7A4B000B0270 /* Build configuration list for PBXNativeTarget "GardenHarvesterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0A5308C1E5B7A4B000B0270 /* Debug */,
+				A0A5308D1E5B7A4B000B0270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0A530631E5B7A4B000B0270 /* Project object */;
+}
