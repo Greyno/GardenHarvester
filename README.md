@@ -1,0 +1,1 @@
+This passion project is the Garden Harvester. You are able to create a vegetable garden, keep track of your yields through the season and get summary data on your overall costs and yields. The application is being created with with Ionic 2 framework.
