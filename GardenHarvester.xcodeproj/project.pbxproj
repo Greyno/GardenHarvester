@@ -412,6 +412,7 @@
 				A0A5308A1E5B7A4B000B0270 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0A5308B1E5B7A4B000B0270 /* Build configuration list for PBXNativeTarget "GardenHarvesterTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +421,7 @@
 				A0A5308D1E5B7A4B000B0270 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
