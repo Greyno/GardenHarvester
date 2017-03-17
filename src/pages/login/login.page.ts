@@ -18,7 +18,7 @@ export class LoginPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
-model = new User('Gillian', 'grey@test.com', '1234');
+model = new User('', '', ''); /*Enter user names here*/
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');

@@ -25,13 +25,19 @@
 
 <!--access a directive using a template reference variable (in this case ngForm)-->
 
+
 <form #form="ngForm" novalidate> <!--turn off browser validation w/ novalidate-->
   <ion-item>
     <ion-label>Name</ion-label>
     <!--let Angular be aware of the value in name field through a name attribute and ngModel-->
-    <ion-input type="name" required name="name" [(ngModel)]="model.name"></ion-input>
+    <!--Use the template reference variable (#firstName) to access the ngModel class-->
+    <ion-input #firstName="ngModel" type="name" required name="name" [(ngModel)]="model.name"></ion-input>
   </ion-item>
+  <div *ngIf="firstName.invalid && firstName.touched" class="alert alert-danger">
+    Your name is required.
+    </div>
 
+  
  <ion-item>
     <ion-label>Email</ion-label>
     <ion-input  type="email" required name="email" [(ngModel)]="model.email"></ion-input>
@@ -41,6 +47,9 @@
     <ion-label>Password</ion-label>
     <ion-input type="password" required name="password" [(ngModel)]="model.password"></ion-input>
   </ion-item>
+
+<h3>Classes</h3>
+  <h4> {{ firstName.invalid}}</h4> <!--access the various classes: invalid, dirty, etc-->
 
   <div text-center>
 <button ion-button (click)="goToHomePage()">Login</button>
