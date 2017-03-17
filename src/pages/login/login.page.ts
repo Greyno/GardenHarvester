@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import {HomePage} from '../pages';
 
+import { HomePage } from '../home/home.page';
+import { RegisterPage } from '../register/register.page';
+import { User } from '../../models/user.model';
 /*
   Generated class for the Login page.
 
@@ -16,12 +18,19 @@ export class LoginPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
+model = new User('Gillian', 'grey@test.com', '1234');
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
 
-  login(){
-    this.navCtrl.push(HomePage); //move to a new garden
+  goToRegister(){
+    this.navCtrl.push(RegisterPage); //move to the Home page
+    //this.navCtrl.push(TabsPage);
+  }
+
+  goToHomePage(){
+    this.navCtrl.push(HomePage);
   }
 
 }

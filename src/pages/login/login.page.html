@@ -4,37 +4,56 @@
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-
-<!--see: https://devdactic.com/login-ionic-2/ for login page set-up-->
 <ion-header>
 
   <ion-navbar>
     <div text-center>
-    <ion-title>Login</ion-title>
+    <ion-title>Garden Harvester Login</ion-title>
     </div>
+
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-You can log in or set up a new account here
+  <div text-center>
+  Log in or register a new account here
+  </div>
+
 <ion-list>
 
-<!-- from: https://forum.ionicframework.com/t/login-form/54445/2-->
+<!--access a directive using a template reference variable (in this case ngForm)-->
+
+<form #form="ngForm" novalidate> <!--turn off browser validation w/ novalidate-->
   <ion-item>
-    <ion-label floating>Username</ion-label>
-    <ion-input [(ngModel)]="username" type="text" value=""></ion-input>
+    <ion-label>Name</ion-label>
+    <!--let Angular be aware of the value in name field through a name attribute and ngModel-->
+    <ion-input type="name" required name="name" [(ngModel)]="model.name"></ion-input>
+  </ion-item>
+
+ <ion-item>
+    <ion-label>Email</ion-label>
+    <ion-input  type="email" required name="email" [(ngModel)]="model.email"></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-label floating>Password</ion-label>
-    <ion-input [(ngModel)]="password"  type="password" value=""></ion-input>
+    <ion-label>Password</ion-label>
+    <ion-input type="password" required name="password" [(ngModel)]="model.password"></ion-input>
   </ion-item>
 
-</ion-list>
-
-<div text-center>
-  <button ion-button  (click)="login()">Sign In</button>
+  <div text-center>
+<button ion-button (click)="goToHomePage()">Login</button>
+<button ion-button (click)="goToRegister()">Register</button>
 </div>
+
+</form>
+</ion-list>
+ 
+ Model: {{model | json }}
+ <br>
+ Angular: {{form.value | json}}
+ <!--{{form.pristine}}: use form.pristine to capture changes made to the form-->
+
+
 </ion-content>

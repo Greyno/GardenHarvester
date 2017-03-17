@@ -2,17 +2,20 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
-import { LoginPage, TabsPage, HomePage, RegisterPage} from '../pages/pages';
+import { HomePage } from '../pages/home/home.page';
+import { LoginPage } from '../pages/login/login.page';
+import { RegisterPage } from '../pages/register/register.page';
+import { ExistingPage } from '../pages/existing/existing.page'
+//import { LoginPage, TabsPage, HomePage, RegisterPage} from '../pages';
+
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  //rootPage = HomePage; 
+  //rootPage = HomePage;
   rootPage = LoginPage;
-
-//see: https://webcake.co/exploring-nav-hierarchy-in-the-ionic-2-tabs-page/
-//possible help with getting tabs to show on another page?
+  //LoginPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {

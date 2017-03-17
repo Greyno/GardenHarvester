@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { TabsPage, NewgardenPage, SummaryPage } from '../pages';
-
-//import {App} from 'ionic-angular';
 
 /*
   Generated class for the Existing page.
@@ -13,15 +10,13 @@ import { TabsPage, NewgardenPage, SummaryPage } from '../pages';
 @Component({
   selector: 'page-existing',
   templateUrl: 'existing.page.html'
-  
 })
-
 export class ExistingPage {
 
-constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
-ionViewDidLoad() {
+  ionViewDidLoad() {
     console.log('ionViewDidLoad ExistingPage');
   }
-}
 
+}

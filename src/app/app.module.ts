@@ -1,22 +1,22 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/pages';
-import { ExistingPage } from '../pages/pages';
-import { NewgardenPage } from '../pages/pages';
-import { SummaryPage, TabsPage, LoginPage, RegisterPage } from '../pages/pages';
-import { AuthService } from '../providers/auth-service';
+import { HomePage } from '../pages/home/home.page';
+import { LoginPage } from '../pages/login/login.page';
+import { RegisterPage } from '../pages/register/register.page';
+import { ExistingPage } from '../pages/existing/existing.page';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ExistingPage, 
-    NewgardenPage,
-    SummaryPage,
-    TabsPage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    ExistingPage,
+  
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -25,13 +25,10 @@ import { AuthService } from '../providers/auth-service';
   entryComponents: [
     MyApp,
     HomePage,
-    ExistingPage,
-    NewgardenPage,
-    SummaryPage,
-    TabsPage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    ExistingPage,
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, AuthService]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class AppModule {}
