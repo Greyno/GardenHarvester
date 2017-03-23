@@ -8,6 +8,10 @@ import { HomePage } from '../pages/home/home.page';
 import { LoginPage } from '../pages/login/login.page';
 import { RegisterPage } from '../pages/register/register.page';
 import { ExistingPage } from '../pages/existing/existing.page';
+import { MyFormService } from '../services/myform';
+import { TabsPage } from '../pages/tabs/tabs.page';
+import { NewgardenPage } from '../pages/newgarden/newgarden.page';
+import { SummaryPage } from '../pages/summary/summary.page';
 
 @NgModule({
   declarations: [
@@ -16,6 +20,9 @@ import { ExistingPage } from '../pages/existing/existing.page';
     LoginPage,
     RegisterPage,
     ExistingPage,
+    TabsPage,
+    NewgardenPage,
+    SummaryPage
   
   ],
   imports: [
@@ -28,7 +35,10 @@ import { ExistingPage } from '../pages/existing/existing.page';
     LoginPage,
     RegisterPage,
     ExistingPage,
+    TabsPage,
+    NewgardenPage,
+    SummaryPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, MyFormService]
 })
 export class AppModule {}

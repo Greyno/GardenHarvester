@@ -16,5 +16,32 @@
 
 
 <ion-content padding>
+  <div text-center>
+    Create your account
+  </div>
+
+<form #form="ngForm" novalidate (ngSubmit)="onSubmit(form)"> <!--turn off browser validation w/ novalidate-->
+  <ion-item>
+    <ion-label>Name</ion-label>
+     <ion-input type="name" required name="name" [(ngModel)]="data.name"></ion-input>
+    <!--
+    <ion-input #name="ngModel" type="name" required name="name" [(ngModel)]="model.name"></ion-input>-->
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Email</ion-label>
+    <ion-input type="email" required name="email" [(ngModel)]="data.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Password</ion-label>
+    <ion-input type="password" required name="password" [(ngModel)]="data.password"></ion-input>
+  </ion-item>
+
+<div text-center>
+ <button ion-button type="submit">Register</button>
+</div>
+
+</form>
 
 </ion-content>

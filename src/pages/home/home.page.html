@@ -6,13 +6,15 @@
       Garden Harvester
     </ion-title>
     </div>
-
+	<ion-buttons end>  
+    <button>Modal</button>        
+  </ion-buttons>
   </ion-navbar>
 </ion-header>
 
   <ion-content padding>
      <div text-center>
-Welcome to the Garden Harvester application, {{username}}! Your email is {{email}}
+Welcome to the Garden Harvester, {{name}}!
 <p>Set up your garden plots and select the type of vegetables you want to grow</p>
 
 <button ion-button (click)="goToNewGardenSetup()">Create a new garden</button>

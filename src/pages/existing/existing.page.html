@@ -7,12 +7,26 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>existing</ion-title>
+    <ion-title>Welcome</ion-title>
+		<ion-buttons end>  
+    <button>Modal</button>        
+  </ion-buttons>
   </ion-navbar>
+	
 
 </ion-header>
 
 
 <ion-content padding>
+	<div class="my-table">
+		
+	</div>
+
+	<ion-list>
+		<button ion-item *ngFor="let vegetable of vegetables" (click)="vegetableSelected(vegetable)">{{vegetable}}
+			<!--<h2 *ngFor="let weight of weights">{{weight}}</h2>-->
+			</button>
+			
+	</ion-list>
 
 </ion-content>
