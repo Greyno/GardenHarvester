@@ -37,7 +37,7 @@ model = new User('', '', ''); /*Enter user names here*/
     this.navCtrl.push(RegisterPage); //move to the Home page
     //this.navCtrl.push(TabsPage);
   }
-
+q
 isValid(){
   var storage = window.localStorage;
 if(this.data.name != storage.getItem('name')){
@@ -54,7 +54,7 @@ if(this.data.password != storage.getItem('password')){
   goToHomePage(){
     console.log(this.data);
     
-    //if(this.isValid()){
+    //if(this.isValid()){ //need to remove for authentication
       this.navCtrl.push(HomePage, {
       name: this.data.name
     });

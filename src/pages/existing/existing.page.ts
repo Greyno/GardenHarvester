@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { MyFormService } from '../../services/myform';
 import { RegisterPage } from '../register/register.page';
+import { VegetableModel } from '../../models/vegetables.model';
 
 /*
   Generated class for the Existing page.

@@ -5,6 +5,7 @@ import { ExistingPage } from '../existing/existing.page';
 import { NewgardenPage } from '../newgarden/newgarden.page';
 import { SummaryPage } from '../summary/summary.page';
 import { AlertController } from 'ionic-angular';
+import { VegetableModel } from '../../models/vegetables.model';
 
 /*
   Generated class for the Tabs page.
@@ -30,12 +31,20 @@ export class TabsPage {
 
   openModal(){//read more on Prompt Alerts
     let prompt = this.alertCtrl.create({
-      title: 'Login',
-      message: "Enter a name for this new album you're so keen on adding",
+      title: 'Enter a new vegetable',
+      message: "Enter information for the harvested vegetable",
       inputs: [
         {
-          name: 'title',
-          placeholder: 'Title'
+          type: 'type',
+          placeholder: 'Vegetable type'
+        },
+        {
+          name: 'name',
+          placeholder: 'Vegetable name'
+        },
+        {
+          type: 'weight',
+          placeholder: 'Weight'
         },
       ],
       buttons: [
