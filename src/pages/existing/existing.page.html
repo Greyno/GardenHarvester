@@ -7,9 +7,9 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Welcome</ion-title>
+    <ion-title>Current Garden</ion-title>
 		<ion-buttons end>  
-    <button>Add</button>        
+    <button ion-button icon-only clear (click)="addVegetable()"><ion-icon name="add"></ion-icon></button>        
   </ion-buttons>
   </ion-navbar>
 	
@@ -23,10 +23,21 @@
 	</div>
 
 	<ion-list>
-		<button ion-item *ngFor="let vegetable of vegetables" (click)="vegetableSelected(vegetable)">{{vegetable}}
-			<!--<h2 *ngFor="let weight of weights">{{weight}}</h2>-->
-			</button>
-			
+			<ion-grid>
+        <ion-item *ngFor="let vegetable of vegetables | async">
+          <ion-row>
+            <ion-col width-33>
+              {{vegetable.type}}
+            </ion-col>
+            <ion-col width-33>
+              {{vegetable.name}}
+            </ion-col>
+            <ion-col width-33>
+              {{vegetable.weight}}
+            </ion-col>
+          </ion-row>
+        </ion-item>
+			</ion-grid>
 	</ion-list>
 
 </ion-content>

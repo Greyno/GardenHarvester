@@ -6,6 +6,8 @@ import { NewgardenPage } from '../newgarden/newgarden.page';
 import { SummaryPage } from '../summary/summary.page';
 import { AlertController } from 'ionic-angular';
 import { VegetableModel } from '../../models/vegetables.model';
+import { HomePage } from '../home/home.page';
+import { MyFormService } from '../../services/myform';
 
 /*
   Generated class for the Tabs page.
@@ -18,51 +20,22 @@ import { VegetableModel } from '../../models/vegetables.model';
   templateUrl: 'tabs.page.html'
 })
 export class TabsPage {
-
+  name: any;
+  
+  homePage = HomePage;
   newGardenTab = NewgardenPage;
   existingPageTab = ExistingPage;
   summaryPageTab = SummaryPage;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController, 
+  public formData:MyFormService) {
+    this.name = navParams.get("name");
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TabsPage');
   }
 
-  openModal(){//read more on Prompt Alerts
-    let prompt = this.alertCtrl.create({
-      title: 'Enter a new vegetable',
-      message: "Enter information for the harvested vegetable",
-      inputs: [
-        {
-          type: 'type',
-          placeholder: 'Vegetable type'
-        },
-        {
-          name: 'name',
-          placeholder: 'Vegetable name'
-        },
-        {
-          type: 'weight',
-          placeholder: 'Weight'
-        },
-      ],
-      buttons: [
-        {
-          text: 'Cancel',
-          handler: data => {
-            console.log('Cancel clicked');
-          }
-        },
-        {
-          text: 'Save',
-          handler: data => {
-            console.log('Saved clicked');
-          }
-        }
-      ]
-    });
-    prompt.present();
-  }
+  
 
 }

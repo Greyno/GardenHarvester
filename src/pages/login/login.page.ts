@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {TabsPage} from '../tabs/tabs.page';
 import { HomePage } from '../home/home.page';
 import { RegisterPage } from '../register/register.page';
 import { User } from '../../models/user.model';
@@ -19,7 +19,7 @@ export class LoginPage {
 
   private data: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public formData:MyFormService) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public formData:MyFormService) {
     this.data = {
       name: '',
       email: '',
@@ -37,7 +37,7 @@ model = new User('', '', ''); /*Enter user names here*/
     this.navCtrl.push(RegisterPage); //move to the Home page
     //this.navCtrl.push(TabsPage);
   }
-q
+
 isValid(){
   var storage = window.localStorage;
 if(this.data.name != storage.getItem('name')){
@@ -55,7 +55,7 @@ if(this.data.password != storage.getItem('password')){
     console.log(this.data);
     
     //if(this.isValid()){ //need to remove for authentication
-      this.navCtrl.push(HomePage, {
+      this.navCtrl.push(TabsPage, {
       name: this.data.name
     });
     //}

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 import { HomePage } from '../pages/home/home.page';
 import { LoginPage } from '../pages/login/login.page';
@@ -20,8 +21,10 @@ export class MyApp {
   //rootPage = HomePage;
   rootPage = LoginPage;
   //LoginPage;
+  items: FirebaseListObservable<any[]>;
 
-  constructor(platform: Platform) {
+  constructor(platform: Platform, af: AngularFire) {
+    this.items = af.database.list('/items');
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
