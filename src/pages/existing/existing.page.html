@@ -9,7 +9,8 @@
   <ion-navbar>
     <ion-title>Current Garden</ion-title>
 		<ion-buttons end>  
-    <button ion-button icon-only clear (click)="addVegetable()"><ion-icon name="add"></ion-icon></button>        
+    <button ion-button icon-only clear (click)="addVegetable()">
+      <ion-icon name="add"></ion-icon></button>        
   </ion-buttons>
   </ion-navbar>
 	
@@ -22,9 +23,13 @@
 		
 	</div>
 
+<!--It’s also using the async pipe, because AngularFire2 returns Observables, 
+which means it’s going to be retrieving the list items and sending them to the 
+view as soon as they become available-->
+
 	<ion-list>
 			<ion-grid>
-        <ion-item *ngFor="let vegetable of vegetables | async">
+        <ion-item *ngFor="let vegetable of vegetables | async" (click)="showOptions(vegetable.$key, vegetable.type)">
           <ion-row>
             <ion-col width-33>
               {{vegetable.type}}
