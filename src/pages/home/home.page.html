@@ -7,12 +7,27 @@
     </ion-title>
     </div>
 	
+     <ion-buttons end>
+      <button ion-button (click)="logout()">
+        <ion-icon name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+
   </ion-navbar>
+
+ 
 </ion-header>
 
   <ion-content padding>
      <div text-center>
-Welcome to the Garden Harvester, {{name}}!
+Welcome to the Garden Harvester!
+
+<ion-row>
+      <ion-col>
+        <img src="../../assets/images/vegetables-790022__340.jpg" />
+      </ion-col>
+    </ion-row>
+    
 <p>Set up your garden plots and select the type of vegetables you want to grow</p>
 
 <button ion-button (click)="goToNewGardenSetup()">Create a new garden</button>

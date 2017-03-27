@@ -54,11 +54,11 @@ if(this.data.password != storage.getItem('password')){
   goToHomePage(){
     console.log(this.data);
     
-    //if(this.isValid()){ //need to remove for authentication
+    if(this.isValid()){ //need to remove for authentication
       this.navCtrl.push(TabsPage, {
       name: this.data.name
     });
-    //}
+    }
   
   }
 

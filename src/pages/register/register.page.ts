@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { User } from '../../models/user.model';
 import { ExistingPage} from '../existing/existing.page';
 import { MyFormService } from '../../services/myform';
+import { LoginPage } from '../login/login.page';
 /*
   Generated class for the Register page.
 
@@ -42,7 +43,7 @@ export class RegisterPage {
       this.formData.name = this.data.name;
       this.formData.email = this.data.email;
       this.formData.password = this.data.password;
-      this.navCtrl.push(ExistingPage); //move to a new garden
+      this.navCtrl.push(LoginPage); //move to a new garden
     }
 
     storage.setItem('name', this.data.name);
