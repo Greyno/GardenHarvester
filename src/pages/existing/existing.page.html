@@ -29,7 +29,7 @@ view as soon as they become available-->
 
 	<ion-list>
 			<ion-grid>
-        <ion-item *ngFor="let vegetable of vegetables | async" (click)="showOptions(vegetable.$key, vegetable.type)">
+        <ion-item *ngFor="let vegetable of vegetables | async" (click)="showOptions(vegetable.$key, vegetable.type, vegetable.name, vegetable.weight, vegetable.date)">
           <ion-row>
             <ion-col width-33>
               {{vegetable.type}}
@@ -37,8 +37,11 @@ view as soon as they become available-->
             <ion-col width-33>
               {{vegetable.name}}
             </ion-col>
-            <ion-col width-33>
+            <ion-col width-20>
               {{vegetable.weight}}
+            </ion-col>
+            <ion-col width-25>
+              {{vegetable.date}}
             </ion-col>
           </ion-row>
         </ion-item>

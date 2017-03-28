@@ -48,7 +48,7 @@ export class ExistingPage {
             placeholder: 'Weight'
           },
           {
-            name: 'harvest date',
+            name: 'date',
             placeholder: 'mm/dd/yyyy'
           },
         ],
@@ -80,7 +80,7 @@ export class ExistingPage {
   }
 
 
-showOptions(veggieId, veggieTitle, veggieType){
+showOptions(veggieId, veggieTitle, veggieType, veggieWeight, harvestDate){
   
   let actionSheet = this.actionSheetCtrl.create({
     title: 'What do you want to do?',
@@ -94,7 +94,7 @@ showOptions(veggieId, veggieTitle, veggieType){
       },{
         text: 'Update Name',
         handler: () => {
-          this.updateVegetable(veggieId, veggieTitle, veggieType);
+          this.updateVegetable(veggieId, veggieTitle, veggieType, veggieWeight, harvestDate);
         }
       },{
         text: 'Cancel',
@@ -113,20 +113,30 @@ removeVegetable(veggieId: string){
   this.vegetables.remove(veggieId);
 }
 
-updateVegetable(veggieId, veggieTitle, veggieType){
+updateVegetable(veggieId, veggieType, veggieTitle, veggieWeight, harvestDate){
   let prompt = this.alertCtrl.create({
-    title: 'Vegetable Name',
-    message: "Update the name for this vegetable",
+    title: 'Vegetable Information',
+    message: "Update the information for this vegetable",
     inputs: [
+      {
+        name: 'type',
+        placeholder: 'Vegetable type',
+        value: veggieType
+      },
       {
         name: 'title',
         placeholder: 'Vegetable name',
         value: veggieTitle
       },
       {
-        name: 'type',
-        placeholder: 'Vegetable type',
-        value: veggieType
+        name: 'weight',
+        placeholder: 'Vegetable weight',
+        value: veggieWeight
+      },
+      {
+        name: 'date',
+        placeholder: 'Harvest date',
+        value: harvestDate
       },
     ],
     buttons: [
@@ -140,8 +150,7 @@ updateVegetable(veggieId, veggieTitle, veggieType){
         text: 'Save',
         handler: data => {
           this.vegetables.update(veggieId, {
-            type: data.title,
-          });
+            type: data.type, title: data.title, weight:data.weight, date:data.date});
         }
       }
     ]
