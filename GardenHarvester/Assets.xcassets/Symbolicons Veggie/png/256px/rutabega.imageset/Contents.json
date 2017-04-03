@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "rutabega.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "rutabega.png",
       "scale" : "2x"
     },
     {

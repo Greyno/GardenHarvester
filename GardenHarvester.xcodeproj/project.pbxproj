@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A07EA69F1E85E3A60060D512 /* RandomNumberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07EA69E1E85E3A60060D512 /* RandomNumberModel.swift */; };
+		A09B33D41E8C6AFE009A6BF7 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09B33D31E8C6AFE009A6BF7 /* ItemDetailViewController.swift */; };
 		A0A5306F1E5B7A4B000B0270 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A5306E1E5B7A4B000B0270 /* AppDelegate.swift */; };
 		A0A530711E5B7A4B000B0270 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A530701E5B7A4B000B0270 /* ViewController.swift */; };
 		A0A530741E5B7A4B000B0270 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A530721E5B7A4B000B0270 /* Main.storyboard */; };
 		A0A530761E5B7A4B000B0270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A530751E5B7A4B000B0270 /* Assets.xcassets */; };
 		A0A530791E5B7A4B000B0270 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A530771E5B7A4B000B0270 /* LaunchScreen.storyboard */; };
 		A0A530841E5B7A4B000B0270 /* GardenHarvesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A530831E5B7A4B000B0270 /* GardenHarvesterTests.swift */; };
+		A0AA963E1E6277AF002F37A7 /* CurrentGardenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AA963D1E6277AF002F37A7 /* CurrentGardenTableViewCell.swift */; };
+		A0AA96401E627D99002F37A7 /* CurrentGardenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AA963F1E627D99002F37A7 /* CurrentGardenViewController.swift */; };
+		A0B2F5101E6B89EE00793661 /* CurrentGardenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B2F50F1E6B89EE00793661 /* CurrentGardenModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A07EA69E1E85E3A60060D512 /* RandomNumberModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomNumberModel.swift; sourceTree = "<group>"; };
+		A09B33D31E8C6AFE009A6BF7 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		A0A5306B1E5B7A4B000B0270 /* GardenHarvester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GardenHarvester.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A5306E1E5B7A4B000B0270 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0A530701E5B7A4B000B0270 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +43,9 @@
 		A0A5307F1E5B7A4B000B0270 /* GardenHarvesterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GardenHarvesterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A530831E5B7A4B000B0270 /* GardenHarvesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenHarvesterTests.swift; sourceTree = "<group>"; };
 		A0A530851E5B7A4B000B0270 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0AA963D1E6277AF002F37A7 /* CurrentGardenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentGardenTableViewCell.swift; sourceTree = "<group>"; };
+		A0AA963F1E627D99002F37A7 /* CurrentGardenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentGardenViewController.swift; sourceTree = "<group>"; };
+		A0B2F50F1E6B89EE00793661 /* CurrentGardenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentGardenModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +87,11 @@
 		A0A5306D1E5B7A4B000B0270 /* GardenHarvester */ = {
 			isa = PBXGroup;
 			children = (
+				A09B33D31E8C6AFE009A6BF7 /* ItemDetailViewController.swift */,
+				A0B2F50E1E6B89BD00793661 /* Model */,
+				A0AA963C1E62774D002F37A7 /* CurrentGardenViewController */,
 				A0A5306E1E5B7A4B000B0270 /* AppDelegate.swift */,
-				A0A530701E5B7A4B000B0270 /* ViewController.swift */,
+				A0AA963B1E62767C002F37A7 /* StartPageViewController */,
 				A0A530721E5B7A4B000B0270 /* Main.storyboard */,
 				A0A530751E5B7A4B000B0270 /* Assets.xcassets */,
 				A0A530771E5B7A4B000B0270 /* LaunchScreen.storyboard */,
@@ -94,6 +107,33 @@
 				A0A530851E5B7A4B000B0270 /* Info.plist */,
 			);
 			path = GardenHarvesterTests;
+			sourceTree = "<group>";
+		};
+		A0AA963B1E62767C002F37A7 /* StartPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0A530701E5B7A4B000B0270 /* ViewController.swift */,
+			);
+			name = StartPageViewController;
+			sourceTree = "<group>";
+		};
+		A0AA963C1E62774D002F37A7 /* CurrentGardenViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0AA963D1E6277AF002F37A7 /* CurrentGardenTableViewCell.swift */,
+				A0AA963F1E627D99002F37A7 /* CurrentGardenViewController.swift */,
+			);
+			name = CurrentGardenViewController;
+			sourceTree = "<group>";
+		};
+		A0B2F50E1E6B89BD00793661 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0B2F50F1E6B89EE00793661 /* CurrentGardenModel.swift */,
+				A07EA69E1E85E3A60060D512 /* RandomNumberModel.swift */,
+			);
+			name = Model;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +242,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0A530711E5B7A4B000B0270 /* ViewController.swift in Sources */,
+				A09B33D41E8C6AFE009A6BF7 /* ItemDetailViewController.swift in Sources */,
+				A0AA96401E627D99002F37A7 /* CurrentGardenViewController.swift in Sources */,
+				A0AA963E1E6277AF002F37A7 /* CurrentGardenTableViewCell.swift in Sources */,
+				A07EA69F1E85E3A60060D512 /* RandomNumberModel.swift in Sources */,
+				A0B2F5101E6B89EE00793661 /* CurrentGardenModel.swift in Sources */,
 				A0A5306F1E5B7A4B000B0270 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

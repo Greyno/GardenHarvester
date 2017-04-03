@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "brussels_sprouts.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "brussels_sprouts.png",
       "scale" : "2x"
     },
     {

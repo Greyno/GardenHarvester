@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "bok_choy.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "bok_choy.png",
       "scale" : "2x"
     },
     {

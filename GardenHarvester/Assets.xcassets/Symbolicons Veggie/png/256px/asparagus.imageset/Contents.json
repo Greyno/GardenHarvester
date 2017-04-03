@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "asparagus.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "asparagus.png",
       "scale" : "2x"
     },
     {

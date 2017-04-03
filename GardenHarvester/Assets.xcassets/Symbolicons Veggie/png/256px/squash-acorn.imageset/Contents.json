@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "squash-acorn.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "squash-acorn.png",
       "scale" : "2x"
     },
     {
